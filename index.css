@@ -1,0 +1,556 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+navbar {
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    z-index: 99;
+}
+
+.hidden {
+    top: -100px;
+}
+
+#nav {
+    transition: top 0.8s;
+}
+
+.nav-item{
+    width: 33.33%;
+}
+
+#icon {
+    text-align: left;
+    padding-left: 2em;
+    font-size: 1.5em;
+}
+
+#wo {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#nav-redirect {
+    text-align: right;
+    padding-right: 2em;
+    font-size: 1.5em;
+}
+
+#nav-redirect a {
+    padding-left: .5em;
+}
+
+#nav-redirect a:hover {
+    text-decoration: underline;
+}
+/* End of Navbar */
+
+/* Main Container (excludes Navbar) */
+#main-container {
+    width: 100%;
+    height: 100%;
+}
+/* End of Main Container */
+
+/* Hero container */
+#hero {
+    padding-top: 15em;
+    padding-bottom: 15em;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    height: 60vh;
+    background-color: #5c5454;
+    margin-bottom: 0;
+}
+
+#profile-img-container {
+    height: 24rem;
+    width: 24rem;
+    border-radius: 50%;
+    background-color:#030303;
+    object-fit: cover;
+}
+
+#profileimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    padding-top: 1rem;
+    font-size: 7em;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+#hero p {
+    font-size: 2em;
+    margin-top: -1.5%;
+    margin-left: .5em;
+    margin-bottom: 0;
+}
+
+#links {
+    margin-left: 1em;
+}
+#links img {
+    margin-top: 0;
+    width: 1.5em;
+}
+
+/* End of Hero container */
+
+/* Sections - About, Projects, Skills, Contact */
+.section {
+    padding-top: 6em;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-bottom: 4em;
+}
+
+.section-title {
+    font-size: 3rem;
+    
+}
+
+.section-subtitle {
+    font-size: 1.75rem;
+    padding-top: 2rem;
+    color:#524848;
+    z-index:99;
+    font-weight: bold;
+}
+
+.section-subtitle-contact {
+    font-size: 1.75rem;
+    color:#524848;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* End of Sections */
+
+
+
+
+
+
+/* Quote/Resume banner */
+
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+#banner p {
+    font-size: 1.75rem;
+    color: #F9F9F9;
+}
+
+#rd-button {
+    display:flex;
+    background-color: #030303;
+    color:#D9D9D9;
+    width: 15%;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
+/* End of Quote/Resume banner */
+
+
+
+/* Projects Container */
+#projects-container{
+    background-color: #F9F9F9;
+}
+
+
+#project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+
+#p-row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#p-row2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+
+}
+
+#p1 {
+    width: 65%;
+    margin-right: 2%;
+    height: 20em;
+    background-image: url('/images/project-images/airplane.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    color: #F9F9F9;
+}
+
+#p2 {
+    width: 35%;
+    height: 20em;
+    background-image: url('/images/project-images/dungeonquad.jpeg');
+    background-size: cover;
+    opacity: 0.85;
+    color: #F9F9F9;
+}
+
+#p3 {
+    width: 35%;
+    height: 20em;
+    margin-right: 2%;
+    background-image: url(/images/project-images/server.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    color: #F9F9F9;
+}
+
+#p4 {
+    width: 65%;
+    height: 20em;
+    background-image: url('/images/project-images/truck.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    color: #F9F9F9;
+}
+
+
+/* Large Project Banners */
+.project-l {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.project-area-l {
+    margin-top: 2%;
+}
+
+.project-details-l {
+    margin-top: 10%
+}
+.project-details-l *{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Small Project Banners */
+.project-s {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.project-area-s {
+    margin-top: 2%;
+}
+
+.project-details-s {
+    margin-top: 10%
+}
+.project-details-s *{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* End of Projects Container */
+
+
+
+
+/* About Container */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #F9F9F9;
+    height: 24rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+}
+
+#about p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#about-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* End of About Container */
+
+
+
+
+/* Skills Container */
+#skills {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #F9F9F9;
+}
+
+
+
+
+#skills-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin-top: -2em;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.skills img {
+    width: 3em;
+}
+
+.skills hr {
+    margin-top: 25%;
+    width: 4em;
+}
+
+.hr, .icon, .icon-text {
+    transition: transform 0.15s ease-in-out;
+}
+
+.skills:hover .icon {
+    transform: translateY(5%);
+}
+
+.skills:hover .hr {
+    transform: translateY(1700%);
+    background: black;
+}
+
+.skills:hover .icon-text {
+    transform: translateY(-200%);
+    border-color: black;
+}
+
+
+/* Languages Container */ 
+
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/* End of Skills Container */
+
+
+
+/* Contact Container */
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    color: #F9F9F9;
+}
+
+#contact-header-title {
+    font-size: 3rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 12.5rem;
+}
+
+#left-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#left-form > input {
+    height: 3rem;
+    width: 95%;
+    background-color: #484646;
+    color:#F9F9F9;
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+
+#right-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.large-input {
+    width: 100%; 
+    height: 100%;
+    padding: .5rem; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+    overflow: hidden;
+    background-color: #484646;
+    color: #F9F9F9;
+}
+
+.large-input::placeholder {
+    vertical-align: top; /* Ensures text is aligned to the top */
+    line-height: 1.5; /* Adjust line height as needed */
+}
+
+
+#send-btn {
+    margin-top: 1%;
+    margin-left: 88%;
+    color: #F9F9F9;
+    background-color: #524848;
+}
+
+#send-btn:hover {
+    background-color: #5f5353;
+    color: #F9F9F9;
+}
+
+
+
+/* Buttons */ 
+/* Cursor */
+.btn {
+    cursor: pointer;
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+}
+
+.sm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 2rem;
+    background-color: #F9F9F9;
+}
+
+.lg-btn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.lg-btn:hover {
+    background-color: #303030;
+}
+
+.black-btn {
+    color: white;
+    background-color: #1c1c1c;
+}
+
+.white-btn {
+    color: #1c1c1c;
+    background-color: #F9F9F9;
+}
+/* End of Buttons */
+
+
+/* Colors */
+.black {
+    color: #1c1c1c;
+}
+
+.white {
+    color: #F9F9F9;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, 
+         #5c5454 0%, /* top color */
+         #343333 33%, /* middle color */
+         #007BFF 100% /* new bottom color */
+     );
+ }
+ 
+
+
+/* End of Colors */
