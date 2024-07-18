@@ -122,7 +122,7 @@ navbar {
     padding-top: 6em;
     padding-left: 12.5%;
     padding-right: 12.5%;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 .section-title {
@@ -225,7 +225,7 @@ navbar {
     background-size: cover;
     background-position: center;
     opacity: 0.85;
-    color: #F9F9F9;
+    color: white;
 }
 
 #p2 {
@@ -247,6 +247,7 @@ navbar {
     opacity: 0.85;
     color: #F9F9F9;
 }
+
 
 #p4 {
     width: 65%;
@@ -421,6 +422,13 @@ navbar {
     color: #F9F9F9;
 }
 
+#contact > h1 {
+    margin-bottom: 0;
+}
+
+#contact > p {
+    padding-bottom: 3rem;
+}
 #contact-header-title {
     font-size: 3rem;
 }
@@ -437,6 +445,7 @@ navbar {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    padding-right: .5rem;
 }
 
 #left-form > input {
@@ -497,7 +506,16 @@ navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
     width: 6rem;
+    border-radius: 10px;
+    opacity: .7;
+    background-color: white;
+    color: black;
+}
+
+.project-btn:hover {
+    opacity: 1;
 }
 
 .sm-btn {
